@@ -21,7 +21,7 @@ const Form = () => {
       <input
         value={texts}
         onChange={(e) => setTexts(e.target.value)}
-        className="border-[2px] p-1"
+        className="border-[2px] p-1 w-[170px] md:w-full"
         type="text"
       />
       {open ? (
