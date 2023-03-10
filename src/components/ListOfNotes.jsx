@@ -16,7 +16,10 @@ const ListOfNotes = () => {
   }
   const displayNotes = formDatas.map((itemes, id) => {
     return (
-      <div key={id} className="flex gap-4">
+      <div
+        key={id}
+        className="flex gap-4 border-[3px] p-1 border-white bg-[#defdffe8] rounded-lg"
+      >
         <div className="w-[60%]">
           {" "}
           <h2 className="font-font-2 text-xl">

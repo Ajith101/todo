@@ -29,7 +29,7 @@ const Form = () => {
           onClick={() => editeAll()}
           className="bg-teal-800 hover:bg-blue-500 text-white text-center p-2"
         >
-          Edite Notes
+          Update Notes
         </button>
       ) : (
         <button
