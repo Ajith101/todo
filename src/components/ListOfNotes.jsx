@@ -45,7 +45,9 @@ const ListOfNotes = () => {
           <div className="flex flex-col gap-3">{displayNotes}</div>
         </>
       ) : (
-        <h1 className="text-2xl font-semibold">Nothing Here</h1>
+        <h1 className="text-2xl font-semibold font-signature-1">
+          Nothing Here
+        </h1>
       )}
     </div>
   );
