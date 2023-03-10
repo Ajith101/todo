@@ -17,10 +17,13 @@ const ListOfNotes = () => {
   const displayNotes = formDatas.map((itemes, id) => {
     return (
       <div key={id} className="flex gap-4">
-        <h2 className="font-font-2 text-xl">
-          {id + 1}
-          {".)"} {itemes}
-        </h2>{" "}
+        <div className="w-[60%]">
+          {" "}
+          <h2 className="font-font-2 text-xl">
+            {id + 1}
+            {".)"} {itemes}
+          </h2>
+        </div>
         <button
           onClick={() => dispatch(removePost({ id }))}
           className="text-red-900 hover:text-green-700 text-center p-1 rounded-lg"
