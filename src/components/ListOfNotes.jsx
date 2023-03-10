@@ -38,7 +38,7 @@ const ListOfNotes = () => {
   });
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col my-5 gap-5">
       {formDatas.length != 0 ? (
         <>
           <h1 className="text-2xl font-semibold">List Of Notes</h1>{" "}
