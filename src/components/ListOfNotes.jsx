@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { editePost, removePost } from "../features/formSlice";
 import { Allvalues } from "./FormContext";
+import { BiEdit } from "react-icons/bi";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const ListOfNotes = () => {
   const { setTexts, texts, setOpen, open, postNo, setPostNo } =
@@ -15,23 +17,22 @@ const ListOfNotes = () => {
   const displayNotes = formDatas.map((itemes, id) => {
     return (
       <div key={id} className="flex gap-4">
-        <h2>
+        <h2 className="font-font-2 text-xl">
           {id + 1}
           {".)"} {itemes}
         </h2>{" "}
         <button
           onClick={() => dispatch(removePost({ id }))}
-          className="bg-red-800 text-white text-center p-1 rounded-lg"
+          className="text-red-900 hover:text-green-700 text-center p-1 rounded-lg"
         >
-          {" "}
-          x
+          <AiFillCloseCircle size={"23px"} />
         </button>
         <button
           onClick={() => editeTheNotes(itemes, id)}
           // onClick={() => setTexts(itemes) && setOpen(!open)}
-          className="bg-red-800 text-white text-center p-1 rounded-lg"
+          className="text-blue-900 hover:text-green-700  text-center p-1 rounded-lg"
         >
-          edit
+          <BiEdit size={"23"} />
         </button>
       </div>
     );

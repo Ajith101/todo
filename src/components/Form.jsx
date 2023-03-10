@@ -27,13 +27,13 @@ const Form = () => {
       {open ? (
         <button
           onClick={() => editeAll()}
-          className="bg-teal-800 text-white text-center p-2"
+          className="bg-teal-800 hover:bg-blue-500 text-white text-center p-2"
         >
           Edite Notes
         </button>
       ) : (
         <button
-          className="bg-teal-800 text-white text-center p-2"
+          className="bg-teal-800 hover:bg-blue-500 text-white text-center p-2"
           onClick={() => addAlltext()}
         >
           Add notes
